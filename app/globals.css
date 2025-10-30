@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #007bff;
+  --color-gray-bg: #f9f9f9;
+  --color-gray-text: #6b7280;
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--color-gray-bg)] text-[var(--color-gray-text)] font-sans;
+  }
+
+  input,
+  select,
+  textarea {
+    @apply border border-gray-300 rounded-md px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-[var(--color-primary)];
+  }
+
+  button {
+    @apply transition-all duration-200;
+  }
+}
