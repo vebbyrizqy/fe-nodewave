@@ -16,7 +16,6 @@ export default function LoginForm() {
       const { user, token } = res.data?.content || {}
       if (!token || !user) throw new Error("Invalid credentials")
 
-      // Simpan ke store
       setAuth(user, token)
 
       // Arahkan sesuai role

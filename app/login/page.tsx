@@ -8,9 +8,9 @@ export default function LoginPage() {
         <LoginForm />
       </div>
       <p className="mt-6 text-sm text-gray-500">
-        Already have an Square account?{" "}
+        Already have an account?{" "}
         <a href="/register" className="text-blue-600 hover:underline">
-          Log in
+          Register
         </a>
       </p>
     </div>
