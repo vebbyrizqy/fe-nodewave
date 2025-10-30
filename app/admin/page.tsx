@@ -68,8 +68,8 @@ const [filteredTodos, setFilteredTodos] = useState<Todo[]>([])
 
       // fallback status filter
       let fetchedTodos = res.data.content.entries
-      if (statusFilter === "success") fetchedTodos = fetchedTodos.filter(todo => todo.isDone)
-      if (statusFilter === "pending") fetchedTodos = fetchedTodos.filter(todo => !todo.isDone)
+      if (statusFilter === "success") fetchedTodos = fetchedTodos.filter((todo: { isDone: any }) => todo.isDone)
+      if (statusFilter === "pending") fetchedTodos = fetchedTodos.filter((todo: { isDone: any }) => !todo.isDone)
 
       setTodos(fetchedTodos)
       setFilteredTodos(fetchedTodos)
